@@ -4,11 +4,17 @@
     <title>CSS Template</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+   
+   
     <link href="./styles/style.css" rel="stylesheet" />
     <style></style>
   </head>
   <body>
-    <div class="header">
+    <div class="bg-animation" id="bg-animation">
+          <!-- <canvas id="vanta-canvas"></canvas> -->
+    <div class="header rounded">
       <h2>Header</h2>
       <nav>
         <ul class="row menu">
@@ -23,8 +29,8 @@
         <h2>Projects</h2>
       </div>
       <div class="row">
-        <div class="column side" style="background-color: #aaa">Column</div>
-        <div class="column middle" style="background-color: #bbb">Column</div>
+        <div class="column side rounded" style="background-color: #aaa">Column</div>
+        <div class="column middle" ></div>
         <div class="column side" style="background-color: #ccc">Column</div>
       </div>
     </section>
@@ -52,7 +58,6 @@
             <h3>Developer Skills</h3>
           </card>
         </div>
-      
       </div>
     </section>
     <section id="contact-section">
@@ -69,5 +74,22 @@
     <div class="footer">
       <p>Footer</p>
     </div>
+</div>
+<script>
+      VANTA.FOG({
+        el: "#bg-animation",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        midtoneColor: 0xff00c3,
+  lowlightColor: 0xf0ff,
+  baseColor: 0x49a9f0,
+  blurFactor: 0.70,
+  speed: 3.30,
+  zoom: 0.90
+      });
+    </script>
   </body>
 </html>
