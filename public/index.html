@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Template</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script> -->
+   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+   
+    <link href="./styles/style.css" rel="stylesheet" />
+    <style></style>
+  </head>
+  <body>
+   
+
+    <div class="content-wrapper">
+          <!-- <canvas id="vanta-canvas"></canvas> -->
+    <header class="header rounded">
+      <h2>Header</h2>
+      <nav>
+        <ul class="row menu">
+          <li class="item"><a href="#project-section">Projects</a></li>
+          <li class="item"><a href="#about-section">About Me</a></li>
+          <li class="item"><a href="#contact-section">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="flex-container" id="project-section">
+      <div class="row section-header">
+        <h2>Projects</h2>
+      </div>
+      <div class="row">
+        <div class="column side rounded" style="background-color: #aaa">Column</div>
+        <div class="column middle" ></div>
+        <div class="column side" style="background-color: #ccc">Column</div>
+      </div>
+    </section>
+    <section id="about-section">
+      <div class="row section-header">
+        <h2>About Me</h2>
+      </div>
+      <div class="row">
+        <div class="column side" style="background-color: #aaa">Column</div>
+        <div class="column middle" style="background-color: #bbb">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eros mi,
+            eleifend at risus quis, dictum scelerisque sem. Integer vel mattis
+            sem. Cras ornare placerat lorem at venenatis. Phasellus purus augue,
+            aliquam vel rutrum quis, eleifend quis ligula. Nam et nulla augue.
+            Quisque pulvinar blandit tortor ut fermentum. Fusce fermentum, eros
+            sed dictum venenatis, mi massa efficitur tellus, quis tristique
+            ipsum mi non libero. Duis sem felis, eleifend in risus eu, mollis
+            malesuada augue. Nullam rhoncus semper purus, non mollis justo
+            faucibus quis.
+          </p>
+        </div>
+        <div class="column side" style="background-color: #ccc">
+         
+            <h3>Developer Skills</h3>
+            <div class"row">
+            <ul class="social-set">
+              <li><a class="sociali" href="#" target="_blank" aria-label="Twitter">
+                <i class="fab fa-node-js"></i></a></li>
+              <li><a class="sociali" href="#" target="_blank" aria-label="GitHub">
+                <i class="fa fa-github-square fa-fw" title="GitHub"></i></a></li>
+              <li><a class="sociali" href="#" target="_blank" aria-label="YouTube">
+                <i class="fa fa-youtube fa-fw" title="YouTube"></i></a></li>
+              <li><a class="sociali" href="#" target="_blank" aria-label="Medium">
+                <i class="fa fa-medium fa-fw" title="Medium"></i></a></li>
+              <li><a class="sociali" href="#" target="_blank" aria-label="Instagram">
+                <i class="fa fa-instagram fa-fw" title="Instagram"></i></a></li>
+              <li><a class="sociali" href="#" target="_blank" aria-label="Facebook">
+                <i class="fa fa-facebook-square fa-fw" title="Facebook"></i></a></li>
+              <li><a class="sociali" href="#" target="_blank" aria-label="Flickr">
+                <i class="fa fa-flickr fa-fw" title="Flickr"></i></a></li>
+              <li><a class="sociali" href="#" target="_blank" aria-label="LinkedIn">
+                <i class="fa fa-linkedin fa-fw" title="LinkedIn"></i></a></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact-section">
+      <div class="row section-header">
+        <h2>Contact</h2>
+      </div>
+      <div class="row">
+        <div class="column side" style="background-color: #aaa">Column</div>
+        <div class="column middle" style="background-color: #bbb">Column</div>
+        <div class="column side" style="background-color: #ccc">Column</div>
+      </div>
+    </section>
+    <button onclick="topFunction()" class="fade-in-section" id="topBtn" title="Go to top">Top</button>
+    <div class="footer">
+      <p>Footer</p>
+    </div>
+  </div>
+
+  <!-- Background Animation -->
+  <div class="bg-animation" id="bg-animation"></div>
+<script>
+       VANTA.NET({
+  el: "#bg-animation",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00
+});
+  //     VANTA.FOG({
+  //       el: "#bg-animation",
+  //       mouseControls: true,
+  //       touchControls: true,
+  //       gyroControls: false,
+  //       minHeight: 200.0,
+  //       minWidth: 200.0,
+  //       midtoneColor: 0xff00c3,
+  // lowlightColor: 0xf0ff,
+  // baseColor: 0x49a9f0,
+  // blurFactor: 0.70,
+  // speed: 3.30,
+  // zoom: 0.90
+  //     });
+
+//       VANTA.NET({
+//   el: "#bg-animation",
+//   mouseControls: true,
+//   touchControls: true,
+//   gyroControls: false,
+//   minHeight: 200.00,
+//   minWidth: 200.00,
+//   scale: 1.00,
+//   scaleMobile: 1.00
+// })
+    </script>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
