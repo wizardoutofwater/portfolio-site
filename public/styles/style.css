@@ -4,15 +4,52 @@
   padding: 0;
 }
 
+
+
 html {
+  /* box-sizing: border-box; */
   scroll-behavior: smooth;
+  /* overflow-x: hidden;
+  overflow-y: scroll; */
 }
 
 body {
   /* font-family: Arial, Helvetica, sans-serif; */
-  /* margin: 1em ; */
+margin: 0;
 
 }
+
+.name-header{
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 800;
+  font-size: 6em;
+  /* transform: translate(50%,-50%); */
+
+/* 
+  font-size: 12em;
+  font-weight: 700; */
+  color: #f5f5f5;
+  text-shadow: 1px 1px 1px #919191,
+      1px 2px 1px #919191,
+      1px 3px 1px #919191,
+      1px 4px 1px #919191,
+      1px 5px 1px #919191,
+      1px 6px 1px #919191,
+      1px 7px 1px #919191,
+      1px 8px 1px #919191,
+      1px 9px 1px #919191,
+      1px 10px 1px #919191,
+  1px 18px 6px rgba(16,16,16,0.4),
+  1px 22px 10px rgba(16,16,16,0.2),
+  1px 25px 35px rgba(16,16,16,0.2),
+  1px 30px 60px rgba(16,16,16,0.4);
+
+}
+
+.lead, .subtitle, .profession, .label{
+  font-family: 'Source Code Pro', monospace;
+}
+
 
 .content-wrapper{
   position: relative;
@@ -30,17 +67,17 @@ body {
   height: 100vh;
  
 }
-:target:before {
+/* :target:before {
   content: "";
   display: block;
   height: 100px;
   margin: -100px 0 0;
-}
+} */
 /* Buttons */
 #topBtn {
   display: block; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
+  bottom: 25px; /* Place the button at the bottom of the page */
   right: 30px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
@@ -64,6 +101,10 @@ body {
   transform: none;
   visibility: visible;
 }
+
+.fill-light {
+  fill: white;
+}
 #topBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
@@ -72,9 +113,27 @@ body {
 .rounded {
   border-radius: .5rem;
 }
+
+.shadow-drop {
+  box-shadow: 
+  1px 18px 6px rgba(16,16,16,0.4),
+  1px 22px 10px rgba(16,16,16,0.2),
+  1px 25px 35px rgba(16,16,16,0.2),
+  1px 30px 60px rgba(16,16,16,0.4);
+}
 /* Style the header */
 
-
+.hero-body{
+  background-image: url("../assets/images/layered-waves-haikei.svg");
+  /* background-position: center center;
+  background-repeat:  no-repeat;
+  background-attachment: fixed; */
+  background-size:  cover;
+  /* background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(238,206,196, 1) 50%, rgba(238,206,196, 1) 100%); */
+}
+.label{
+  color: white;
+}
 
 .nav{
  /* align-content: center; */
@@ -85,6 +144,7 @@ body {
   /* align-items: center; */
   /* border: 1px solid black; */
 }
+
 
 
 /* Style the footer */
@@ -103,70 +163,3 @@ body {
 } */
 
 
-/* Registration form */
-.field:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
-.register {
-  margin-top: 10rem;
-  background: white;
-  border-radius: 10px;
-}
-
-.left,
-.right {
-  padding: 4.5rem;
-}
-
-.left {
-  border-right: 5px solid var(--background);
-}
-
-.left .title {
-  font-weight: 800;
-  letter-spacing: -2px;
-}
-
-.left .colored {
-  color: var(--brandColor);
-  font-weight: 500;
-  margin-top: 1rem !important;
-  letter-spacing: -1px;
-}
-
-.left p {
-  color: var(--textLight);
-  font-size: 1.15rem;
-}
-
-.right .title {
-  font-weight: 800;
-  letter-spacing: -1px;
-}
-
-.right .description {
-  margin-top: 1rem;
-  margin-bottom: 1rem !important;
-  color: var(--textLight);
-  font-size: 1.15rem;
-}
-
-.right small {
-  color: var(--textLight);
-}
-
-input {
-  font-size: 1rem;
-}
-
-input:focus {
-  border-color: var(--brandColor) !important;
-  box-shadow: 0 0 0 1px var(--brandColor) !important;
-}
-
-.fab,
-.fas {
-  color: var(--textLight);
-  margin-right: 1rem;
-}
